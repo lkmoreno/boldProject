@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  background: #ffffff;
+  height: 2.5rem;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  padding: 8px;
+  @media (max-width: 768px) {
+    justify-content: end;
+    gap: 1rem;
+    //flex-direction: column-reverse;
+  }
+}
+
+.button {
+  background-color: #ffffff;
+  height: 2rem;
+  color: #121e6c;
+  border: transparent;
+  width: 15rem;
+  border-radius: 5rem;
+}
+
+.buttonSelected {
+  background: #f3f3f3;
+}

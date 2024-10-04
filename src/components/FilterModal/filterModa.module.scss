@@ -1,0 +1,39 @@
+.card {
+  background: #ffffff;
+  font-size: 1rem;
+  color: #121e6c;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 17rem;
+  position: absolute;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
+.actionButton {
+  color: #ffffff;
+  background: #ee424e;
+  border: transparent;
+  width: 100%;
+  border-radius: 2.5rem;
+  height: 3rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerButton {
+  border: transparent;
+  background-color: #ffffff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}

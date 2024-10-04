@@ -1,0 +1,76 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 35%;
+  @media (max-width: 768px) {
+    justify-content: end;
+    gap: 1rem;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
+
+.header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-image: linear-gradient(270deg, #ee424e 23.86%, #121e6c 73.33%);
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  background-color: #fff;
+  border: none;
+  color: red;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.content {
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  @media (max-width: 768px) {
+    height: 3rem;
+    padding: 0;
+    margin: 0;
+  }
+  .textValue {
+    font-size: 2rem;
+    font-weight: 900;
+    background: linear-gradient(to right, #121e6c, #ee424e);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    @media (max-width: 768px) {
+      padding: 0;
+      margin: 0;
+      font-size: 1rem;
+    }
+  }
+  .textDate {
+    color: black;
+    @media (max-width: 768px) {
+      padding: 0;
+      margin: 0;
+      font-size: 1rem;
+    }
+  }
+}
