@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styles from "./Table.module.scss";
+import styles from "./table.module.scss";
 import {
   formatValueAmount,
   PaymentMethod,
@@ -9,16 +9,16 @@ import {
 import { format } from "date-fns/format";
 import { es } from "date-fns/locale";
 import { IoMdSearch } from "react-icons/io";
-import { DataResult, TableProps } from "./types";
+import { TableProps } from "./types";
 
 const Table: React.FC<TableProps> = ({ data, filterDate }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredData, setFilteredData] = useState(data);
   const month = format(new Date(), "MMMM", { locale: es });
 
-  const handleViewDetail = (dataSelected: DataResult) => {
-    //TODO function to select details
-  };
+  // const handleViewDetail = (dataSelected: DataResult) => {
+  //   //TODO function to select details
+  // };
 
   const handleSearch = (valueSearch: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(valueSearch.target.value);
@@ -67,7 +67,7 @@ const Table: React.FC<TableProps> = ({ data, filterDate }) => {
             filteredData.map((item) => (
               <tr
                 data-target="#exampleModalRight"
-                onClick={() => handleViewDetail(item)}
+                //onClick={() => handleViewDetail(item)}
                 className={styles.rowTable}
                 key={item.id}
               >
